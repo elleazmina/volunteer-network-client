@@ -1,0 +1,20 @@
+works = [
+    {
+        "name":"Child Support",
+        "img":"childSupport.png"
+    },
+    {
+        "name":"Animal Shelter",
+        "img":"animalShelter.png"
+    },
+    {
+        "name":"Bird House",
+        "img":"birdHouse.png"
+    },
+    {
+        "name":"Baby Sitting",
+        "img":"babySit.png"
+    }
+];
+
+export default works;
