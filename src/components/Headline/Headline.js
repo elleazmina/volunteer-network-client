@@ -107,7 +107,7 @@ const Headline = () => {
       </div>
       <div className="row">
       {
-        works.map(work => <Works work={work}></Works>)
+        works.map(work => <Works key={work.name} work={work}></Works>)
       }
       </div>
 

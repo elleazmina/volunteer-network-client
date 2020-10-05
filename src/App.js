@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import Admin from "./components/Admin/Admin";
 import Header from './components/Header/Header';
 import Headline from './components/Headline/Headline';
 import Login from "./components/Login/Login";
@@ -24,8 +25,12 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          
-          <PrivateRoute path="/register">
+
+          <Route path="/admin">
+            <Admin></Admin>
+          </Route>
+
+          <PrivateRoute path="/register/:name">
           <Register></Register>
           </PrivateRoute>
 

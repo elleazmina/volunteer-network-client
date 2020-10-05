@@ -1,7 +1,12 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 const Works = ({ work }) => {
+  const history = useHistory();
+  const handleRegister = (name) => {
+    history.push(`/register/${name}`);
+}
   return (
     <div style={{ marginBottom: "10px" }} className="col-md-3">
       <img
@@ -11,7 +16,7 @@ const Works = ({ work }) => {
       />
       <h3>
         {" "}
-        <Button variant="link">{work.name}</Button>
+        <Button onClick={() => handleRegister(work.name)} variant="link">{work.name}</Button>
       </h3>
     </div>
   );
