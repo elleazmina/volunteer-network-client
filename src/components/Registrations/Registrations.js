@@ -8,7 +8,7 @@ const Registrations = () => {
   const [registrations, setRegistrations] = useState([]);
 
   useEffect(() => {
-    fetch("https://localhost:5000/registrations?email="+loggedInUser.email, {
+    fetch("https://immense-chamber-47005.herokuapp.com/registrations?email="+loggedInUser.email, {
       method: "GET",
       headers: { 
         'Content-Type': 'application/json',

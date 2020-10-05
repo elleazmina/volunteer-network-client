@@ -17,7 +17,7 @@ import Registrations from "../Registrations/Registrations";
 const Register = () => {
   const handleRegistration = () => {
     const newRegistration = { ...loggedInUser, ...selectedDate };
-    fetch("https://localhost:5000/addRegistration", {
+    fetch("https://immense-chamber-47005.herokuapp.com/addRegistration", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newRegistration),
